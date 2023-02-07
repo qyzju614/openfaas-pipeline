@@ -1,0 +1,36 @@
+apiVersion: kubeovn.io/v1
+kind: Vip
+metadata:
+  name: vip-image-resizer
+spec:
+  subnet: subnet-svc
+  v4ip: "10.64.0.130"
+
+---
+apiVersion: kubeovn.io/v1
+kind: Vip
+metadata:
+  name: vip-json-uploader
+spec:
+  subnet: subnet-svc
+  v4ip: "10.64.0.131"
+
+---
+
+apiVersion: kubeovn.io/v1
+kind: Vip
+metadata:
+  name: vip-minio-webhook-handler
+spec:
+  subnet: subnet-svc
+  v4ip: "10.64.0.132"
+
+---
+
+apiVersion: kubeovn.io/v1
+kind: Vip
+metadata:
+  name: vip-inception
+spec:
+  subnet: subnet-svc
+  v4ip: "10.64.0.133"
